@@ -8,6 +8,9 @@ import { AngularFireModule } from 'angularfire2'
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from 'environments/environment';
 import { masterFirebaseConfig } from './api-keys';
+import { MessageComponent } from './message/message.component';
+import { MessageService } from './message.service';
+import { PostMessageComponent } from './post-message/post-message.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -19,6 +22,8 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
+    MessageComponent,
+    PostMessageComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +33,7 @@ export const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
