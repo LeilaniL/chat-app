@@ -2,7 +2,7 @@
 
 #### _Group Project for Epicodus - 1/25/2019_
 
-#### By _**Maxwell Dubin, Leilani Leach, Glen Sale, Cristian Lucero, Daniel ____**_
+#### By _**Maxwell Dubin, Leilani Leach, Glen Sale, Cristian Lucero, Daniel Lira**_
 
 ## Description
 
@@ -31,4 +31,4 @@ _A chat room application where users can send and view messages._
 
 *This software is licensed under the MIT license.*
 
-Copyright (c) 2019 **Maxwell Dubin, Leilani Leach, Glen Sale, Cristian Lucero, Daniel ____ **
+Copyright (c) 2019 **Maxwell Dubin, Leilani Leach, Glen Sale, Cristian Lucero, Daniel Lira **
