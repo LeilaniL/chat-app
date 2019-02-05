@@ -17,8 +17,13 @@ export class MessageService {
 
    addMessage(message: Message){
      this.messages.push(message);
-     console.log(message);
    }
-   
-
+  //  switchColor() {
+  //   msgColor = (!this.msgColor);
+  //   if (this.msgColor==true){
+  //     return "lighter-msg";
+  //   } else {
+  //     return "darker-msg";
+  //   }
+  //     }
 }

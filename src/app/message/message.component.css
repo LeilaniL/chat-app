@@ -1,0 +1,25 @@
+.row {
+    display: flex;
+  }
+  
+  .column-user {
+    flex: 30%;
+    text-align: center;
+}
+.column-user img {
+    border-radius: 50%;
+}
+.user-name {
+    font-size: 26px;
+
+  }
+  .column-msg {
+    flex: 70%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.msg-body {
+    font-size: 22px;
+
+  }
