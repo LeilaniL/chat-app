@@ -6,11 +6,11 @@ import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from 'angularfire2'
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { environment } from 'environments/environment';
 import { masterFirebaseConfig } from './api-keys';
 import { MessageComponent } from './message/message.component';
 import { MessageService } from './message.service';
 import { PostMessageComponent } from './post-message/post-message.component';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,7 +31,8 @@ export const firebaseConfig = {
     HttpModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]
