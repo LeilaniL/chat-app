@@ -25,12 +25,12 @@ export class AppComponent  {
   }
 
   ngOnInit() {
-    setTimeout(function(){ window.scrollTo(0,document.body.scrollHeight);}, 1500);
+    setTimeout(function(){ window.scrollTo(0,document.body.scrollHeight)}, 2000);
   }
   
   login() {
     this.authService.login();
-    setTimeout(function(){ window.scrollTo(0,document.body.scrollHeight)}, 2500);
+    setTimeout(function(){ window.scrollTo(0,document.body.scrollHeight)}, 2000);
   }
 
   logout() {
