@@ -1,4 +1,6 @@
-<p>
-  <input (keydown.enter)="postMessage(msgBody.value)" id="userInput" #msgBody placeholder="Type your message..">
-  <button (click)="postMessage(msgBody.value); msgBody.value=''">Send</button>
-</p>
+<div id="msgForm">
+  <p>
+    <input (keydown.enter)="postMessage(msgBody.value)" id="userInput" #msgBody placeholder="Type your message..">
+    <button (click)="postMessage(msgBody.value); msgBody.value=''">Send</button>
+  </p>
+</div>

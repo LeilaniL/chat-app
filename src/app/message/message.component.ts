@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { MessageService } from 'app/message.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-message',
@@ -9,7 +10,7 @@ import { MessageService } from 'app/message.service';
 })
 export class MessageComponent implements OnInit {
 messages: FirebaseListObservable<any[]>;
-  constructor(private service: MessageService) {
+  constructor(private service: MessageService, private router: Router) {
    }
 
   ngOnInit() {
