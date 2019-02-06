@@ -1,13 +1,16 @@
-<div class="lighter-msg" *ngFor="let message of messages | async">
-    <div class="container row">
-        <div class="column-user">
-            <p class="user-name">{{message.userName }}</p>
-            <img src="{{message.userPic}}">
-        </div>
-        <div class="column-msg">
-            <p class="msg-body">{{message.body }}</p>
-            <span id="time">{{ message.timeStamp }}</span>
-        </div>
 
+<div class="message-board">
+    <div  ngx-auto-scroll lock-y-offset="10" observe-attributes class="lighter-msg" *ngFor="let message of messages | async">
+        <div class="container row">
+            <div class="column-user">
+                <p class="user-name">{{message.userName }}</p>
+                <img src="{{message.userPic}}">
+            </div>
+            <div class="column-msg">
+                <p class="msg-body">{{message.body }}</p>
+                <span id="time">{{ message.timeStamp }}</span>
+            </div>
+
+        </div>
     </div>
 </div>
