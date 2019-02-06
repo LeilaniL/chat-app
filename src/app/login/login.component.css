@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+}
+button {
+    text-align: center;
+    padding-bottom: 50px;
+    width: 10%;
+    height: 150px;
+    margin-left: 45%;
+    margin-right: 45%;
+    background-image: url("../../assets/G-logo.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+}
