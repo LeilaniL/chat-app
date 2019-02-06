@@ -12,6 +12,7 @@ import { MessageService } from './message.service';
 import { PostMessageComponent } from './post-message/post-message.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { LoginComponent } from './login/login.component';
+import { ChatroomComponent } from './chatroom/chatroom.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -26,6 +27,7 @@ export const firebaseConfig = {
     MessageComponent,
     PostMessageComponent,
     LoginComponent,
+    ChatroomComponent,
   ],
   imports: [
     BrowserModule,

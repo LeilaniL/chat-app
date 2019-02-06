@@ -1,3 +1,3 @@
-<p>
-  login works!
-</p>
+<h1>Welcome to EpiChat!</h1>
+<p *ngIf="isLoggedIn"> You are logged in as: <strong>{{ userName }}</strong><br><button (click)="logout()">Log out</button> </p>
+<p *ngIf="!isLoggedIn"> You are currently logged out. <button (click)="login()">Log in</button></p>
