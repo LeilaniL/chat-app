@@ -1,8 +1,8 @@
 <footer class="footer">
   <div id="msgForm">
     <p>
-      <input (keydown.enter)="postMessage(msgBody.value)" id="userInput" #msgBody placeholder="Type your message..">
-      <button (click)="postMessage(msgBody.value); msgBody.value=''">Send</button>
+      <input (keydown.enter)="postMessage(msgBody.value); msgBody.value=''" class="textbox" id="userInput" #msgBody placeholder="Type your message..">
+      <button (click)="postMessage(msgBody.value); msgBody.value=''" >Send</button>
     </p>
   </div>
 </footer>
