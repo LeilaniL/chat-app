@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { AuthenticationService } from './authentication.service';
 
@@ -8,7 +8,7 @@ import { AuthenticationService } from './authentication.service';
   styleUrls: ['./app.component.css'],
   providers: [AuthenticationService]
 })
-export class AppComponent {
+export class AppComponent  {
   user;
   private isLoggedIn: Boolean;
   private userName: string;
@@ -24,8 +24,13 @@ export class AppComponent {
     });
   }
 
+  ngOnInit() {
+    setTimeout(function(){ window.scrollTo(0,document.body.scrollHeight);}, 1500);
+  }
+  
   login() {
     this.authService.login();
+    setTimeout(function(){ window.scrollTo(0,document.body.scrollHeight);}, 100);
   }
 
   logout() {

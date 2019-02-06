@@ -23,9 +23,11 @@ export class PostMessageComponent implements OnInit {
 
   ngOnInit() {
   }
+
   postMessage(messageText: string) {
     let newMsg = new Message(messageText, this.userName, this.userPic);
     this.service.addMessage(newMsg);
+    setTimeout(function(){ window.scrollTo(0,document.body.scrollHeight);}, 100);
   }
   
 }
