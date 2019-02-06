@@ -1,14 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { FirebaseListObservable } from 'angularfire2/database';
-import { AuthenticationService } from './authentication.service';
+import { AuthenticationService } from '../authentication.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  providers: [AuthenticationService]
+  selector: 'app-chatroom',
+  templateUrl: './chatroom.component.html',
+  styleUrls: ['./chatroom.component.css']
 })
-export class AppComponent  {
+export class ChatroomComponent implements OnInit {
   user;
   private isLoggedIn: Boolean;
   private userName: string;
@@ -24,16 +22,14 @@ export class AppComponent  {
     });
   }
 
-  ngOnInit() {
-    setTimeout(function(){ window.scrollTo(0,document.body.scrollHeight);}, 1500);
-  }
-  
   login() {
     this.authService.login();
-    setTimeout(function(){ window.scrollTo(0,document.body.scrollHeight)}, 2500);
   }
 
   logout() {
     this.authService.logout();
   }
+  ngOnInit() {
+  }
+
 }
