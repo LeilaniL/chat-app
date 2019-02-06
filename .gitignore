@@ -44,4 +44,3 @@ Thumbs.db
 
 #Firebase credentials
 /src/app/api-keys.ts
-/src/environments*
