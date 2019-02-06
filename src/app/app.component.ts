@@ -26,6 +26,7 @@ export class AppComponent {
 
   login() {
     this.authService.login();
+    setTimeout(function(){ window.scrollTo(0,document.body.scrollHeight)}, 2500);
   }
 
   logout() {
