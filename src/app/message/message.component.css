@@ -28,3 +28,16 @@ color: white;
 .message-board{
  margin-bottom: 75px;   
 }
+
+.MyMessages {
+    background-color: grey;
+}
+
+.lighter-msg {
+    background-color: blue;
+
+}
+.darker-msg{
+    background-color: rgb(179, 179, 179);
+
+}

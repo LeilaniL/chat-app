@@ -11,14 +11,6 @@
     font-weight: bold;
       font-size: 20px;
   }
-  .lighter-msg {
-      background-color: blue;
-  
-  }
-  .darker-msg{
-      background-color: rgb(110, 108, 109);
-  
-  }
 
   #time {
     font-size: 10px;
