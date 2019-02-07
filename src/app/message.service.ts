@@ -8,7 +8,11 @@ export class MessageService {
   messages: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
-    this.messages = database.list('messages');
+    this.messages = database.list('messages', {
+      query: {
+        limitToLast: 25
+      }
+    });
    }
 
    getMessages() {
