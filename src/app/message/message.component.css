@@ -28,12 +28,12 @@
  margin-bottom: 75px;   
 }
 
-.MyMessages {
-    background-color: grey;
-}
-
 .darker-msg, .lighter-msg {
     display: flex;
+    -webkit-box-shadow: -1px 1px 2px 4px rgba(95, 93, 93, 0.205);
+ -moz-box-shadow: -1px 1px 2px 4px rgba(95, 93, 93, 0.205);
+ box-shadow: -1px 1px 2px 4px rgba(95, 93, 93, 0.205);
+ margin: 30px;
 }
 
 .lighter-msg {
@@ -42,6 +42,6 @@
 }
 
 .darker-msg{
-    background-color: rgb(179, 179, 179);
+    background-color: rgb(143, 140, 140);
     margin-right: 40%;
 }
