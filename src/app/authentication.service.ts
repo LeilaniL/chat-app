@@ -11,12 +11,16 @@ export class AuthenticationService {
    }
 
    login() {
-    this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
-  
+     var googleAuth = new firebase.auth.GoogleAuthProvider();
+     googleAuth.setCustomParameters({
+       prompt: 'select_account'
+     })
+    this.afAuth.auth.signInWithPopup(googleAuth);
   }
 
   logout() {
     this.afAuth.auth.signOut();
+    
   }
 
 }
