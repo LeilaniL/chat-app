@@ -19,7 +19,7 @@ export class ChatroomComponent implements OnInit {
         this.isLoggedIn = true;
         this.userName = user.displayName;
       }
-      
+
     });
   }
 
@@ -33,6 +33,6 @@ export class ChatroomComponent implements OnInit {
   ngOnInit() {
   }
 
-  
+
 
 }

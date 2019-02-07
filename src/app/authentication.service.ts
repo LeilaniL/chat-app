@@ -8,19 +8,19 @@ export class AuthenticationService {
   user: Observable<firebase.User>;
   constructor(public afAuth: AngularFireAuth) {
     this.user = afAuth.authState;
-   }
+  }
 
-   login() {
-     var googleAuth = new firebase.auth.GoogleAuthProvider();
-     googleAuth.setCustomParameters({
-       prompt: 'select_account'
-     })
-    this.afAuth.auth.signInWithPopup(googleAuth);
+  login() {
+    var googleAuth = new firebase.auth.GoogleAuthProvider();
+    googleAuth.setCustomParameters({
+      prompt: 'select_account'
+    })
+    this.afAuth.auth.signInWithRedirect(googleAuth);
   }
 
   logout() {
     this.afAuth.auth.signOut();
-    
+
   }
 
 }
