@@ -9,11 +9,11 @@
 
 .user-name {
     font-size: 26px;
-color: white;
+    color: white;
 }
 
 .column-msg {
-    width: 70%;
+    width: 50%;
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
@@ -22,7 +22,6 @@ color: white;
 .msg-body {
     font-size: 22px;
     color: white;
-
 }
 
 .message-board{
@@ -36,9 +35,13 @@ color: white;
 .darker-msg, .lighter-msg {
     display: flex;
 }
+
 .lighter-msg {
     background-color: blue;
+    margin-left: 40%;
 }
+
 .darker-msg{
     background-color: rgb(179, 179, 179);
+    margin-right: 40%;
 }
