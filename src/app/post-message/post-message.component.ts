@@ -12,6 +12,7 @@ export class PostMessageComponent implements OnInit {
 
   userName;
   userPic;
+  audio = new Audio('../assets/sounds/grunt.mp3');
 
   constructor(private service: MessageService, public authService: AuthenticationService) {
     this.authService.user.subscribe(user => {
@@ -27,7 +28,12 @@ export class PostMessageComponent implements OnInit {
   postMessage(messageText: string) {
     let newMsg = new Message(messageText, this.userName, this.userPic);
     this.service.addMessage(newMsg);
+    this.playAudio()
     setTimeout(function(){ window.scrollTo(0,document.body.scrollHeight);}, 100);
+  }
+
+  playAudio(){
+  this.audio.play();
   }
   
 }
