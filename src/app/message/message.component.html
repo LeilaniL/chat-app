@@ -1,6 +1,6 @@
 <div class="message-board" >
     <div  *ngFor="let message of messages | async">
-        <div class="container row"  [class]="checkWhoSent(message)">
+        <div [class]="checkWhoSent(message)">
             <div class="column-user">
                 <p (click)="checkWhoSent(message)" class="user-name">{{message.userName }}</p>
                 <img src="{{message.userPic}}">
